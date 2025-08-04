@@ -1,0 +1,89 @@
+/*estilização do html como um todo(configurações basicas)*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*estilização da div que recebe as subdivisões de explicação*/
+.content_geral{
+    display: flex;
+    align-items: center;
+    /*aqui tem uma formatação que vocês vão aprender mais pra frente*/
+
+    
+    /*logo a baixo, a formatação do tamanho e formato que eu quero que essa div receba como "height(altuta) e width(largura),
+    formatados em vh e vw respectivamente.
+    vh é basicamente uma unidade de medida assim como px, porém sua grnde diferença é que ela se adequa ao tamanho da tela,
+     onde 100vh ou 100vw,é igual 100% da tela.. na medidade de 100vh sendo 100% da tela em altura e vw em altura.
+     mas normalmente são usadas nas div's conteiner(que recebem algumas ou muitas div's filho).
+     e isso abre uma margem para trabalhar de uma forma mais dinamica com estas medidas, sabendo que no notebook da escola e em casa você pode 
+     encontrar a mesma formatação, sem quebra de linhas e entre outros problemas*/
+    height: 99vh;
+    width: 100vw;
+}
+.content1{
+    /*div secudaria que filha da div geral(contente_geral) e pai das whidt e height, cobre 50% da tela em altura e largura, na tela aparece em bege
+    neste caso usando a medidade de porcentagem para medida de tamanho, tenha sempre em mente que a porcentagem que você
+    coloca, corresponde ao tamanho a div pai, neste caso a div "content1", que tem  100% da tela.
+    OBS: a porcentagem não devem ser usada como medida de divs pais, principalmente as divs que não tem uma div pai, pois a altura em % não é computada,
+    ou seja não vai responder a estilização, pois a altura de um site é mutavel. 
+    */
+    width: 50%;
+    height: 100%;
+    background-color: bisque;
+    border: solid 2px;
+}
+.content2{
+    /*div secudaria que filha da div geral(contente_geral) e pai das whidt e height, cobre 50% da tela em altura e largura, na tela aparece um lilas*/
+    width: 50%;
+    height: 100%;
+    background-color:blueviolet;
+    border: solid 2px;
+}
+.largura{
+    /*Aqui ja trabalhando em px, sabendo que px é uma medida exata que não se adequa a diferenças de tamanho de telas ou elementos,
+     podemos concluir que 10px em uma tela de um celular vai aparentar muito menor quem em um monitor, por isso só é usado em casos especificos
+     como em sistemas/sites totalmente responsivos(que se adaptam de acordo com o tamanho da tela)*/
+    width:200px ;
+    height:50px ;
+    background-color: rgb(33, 33, 240);
+
+}
+.largura2{
+    /*div 350 px de larura*/
+    width:350px ;
+    height:50px ;
+    background-color: rgb(224, 44, 68);
+}
+.largura3{
+    /*aqui está um exemplo de uso da % de forma correta, pois ela tem uma div pai, e o intuito dela é cobrir exatamente 50% da largura da div pai
+    neste caso não é usado px, pois é muito dificil de acertar exatamente a quantidade de px que você deseja.
+    */
+    background-color: darkgreen;
+    width: 50%;
+    height: 50px;
+}
+.altura{
+    /*div 200 px de larura*/
+    height:200px;
+    width: 50px;
+    border: solid 2px ;
+    background-color:  rgb(44, 44, 224);
+}
+.altura2{
+    /*div 350 px de larura*/
+    height:350px;
+    width: 50px;
+    border: solid 2px ;
+    background-color: rgb(224, 44, 68);
+}
+.altura3{
+    /*aqui novamente um exemplo de uso da % de forma correta
+    */
+    background-color: burlywood;
+    width: 50px;
+    border: solid 2px;
+    height: 50%;
+}
+/*tudo que foi dito nos comentarios do codigo pode afetar como um elemento se comporta, levando em consideração ao magin e o padding de certos elementos
+levando em consideração que pode acabar quebrando a estrutura.*/
+/*a explicação sobre, margin padding e border estão no slide*/
